@@ -2,7 +2,7 @@ import {test} from '@playwright/test';
 
 test('Youtube Search',async({page})=>{
     await page.goto('https://www.youtube.com');
-    await page.waitForTimeout(3000);
+  
 
     let searchBox = page.locator("//div[@id='container']//input[@id='search']")
 
